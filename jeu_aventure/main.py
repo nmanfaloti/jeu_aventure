@@ -21,6 +21,7 @@ image10 = pygame.image.load("chambrep.jpg")
 image12 = pygame.image.load("chambrep.jpg")
 image11 = pygame.image.load("garage.jpg")
 image13 = pygame.image.load("cuisine.jpg")
+image14 = pygame.image.load("voiture.jpg")
 map = pygame.image.load("map.png")
 map2 = pygame.image.load("map2.png")
 j = pygame.image.load("posej.png")
@@ -113,6 +114,7 @@ def decrireLaPiece(piece):
         fenetre.blit(text10, (0, 300))
         fenetre.blit(textgg, (0, 0)) # affiche le texte "Vous avez trouvé la clef"
         fenetre.blit(map2, (472, 0))
+        fenetre.blit(j, (483, 65))
     elif piece == 11:
         fenetre.blit(image11, (0, 0))
         fenetre.blit(text11, (0, 300))
@@ -121,10 +123,10 @@ def decrireLaPiece(piece):
         fenetre.blit(map, (472, 0))
         fenetre.blit(j, (483, 120))
     elif piece == 13:
-        fenetre.blit(image10, (0, 0))
-        fenetre.blit(text10, (0, 300))
+        fenetre.blit(image14, (0, 0))
         fenetre.blit(textfin, (0, 0))
         fenetre.blit(map, (472, 0))
+        fenetre.blit(j, (483, 120))
 
 def decision(direction, piece):
     print("Vous désirez allez au", direction)
